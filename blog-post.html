@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategic Insight Reader | Katalyst Street</title>
+  <meta name="description" content="Read full professional publications, tech reports, and system optimization guides published by Katalyst Street.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/2a4917_f1a284b9ea744d8caed27cbc2d0498f5~mv2.png/v1/fill/w_32,h_32/2a4917_f1a284b9ea744d8caed27cbc2d0498f5~mv2.png">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body class="blog-body-class">
+
+  <!-- Viewport Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="reading-progress"></div>
+  </div>
+
+  <!-- Background Decorative Blurs -->
+  <div class="glow-bg glow-bg-1"></div>
+  <div class="glow-bg glow-bg-2"></div>
+  <div class="glow-bg glow-bg-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="main-nav">
+    <div class="nav-container">
+      <a href="./index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="url(#logo-grad-1)"/>
+          <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="url(#logo-grad-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-grad-1" x1="2" y1="2" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#4F46E5"/>
+              <stop offset="100%" stop-color="#06B6D4"/>
+            </linearGradient>
+            <linearGradient id="logo-grad-2" x1="2" y1="12" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#4F46E5"/>
+              <stop offset="100%" stop-color="#0D9488"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Katalyst <span class="accent-text">Street</span></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav-menu">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./index.html#services" class="nav-link">What We Do</a>
+        <a href="./index.html#solutions" class="nav-link">Solutions</a>
+        <a href="./index.html#approach" class="nav-link">Our Approach</a>
+        <a href="./index.html#customers" class="nav-link">Customers</a>
+        <a href="./blog.html" class="nav-link active">Insights</a>
+        <a href="./index.html#contact" class="nav-link contact-btn">Get in Touch</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Post Content Main Area -->
+  <main class="reader-main-wrapper container">
+    
+    <!-- Navigation Back Link -->
+    <div class="reader-navigation-top">
+      <a href="./blog.html" class="btn-back-link">← Back to Strategic Insights</a>
+    </div>
+
+    <!-- Post Article Wrapper -->
+    <article class="glass-card post-reader-card" id="post-reader-card">
+      
+      <!-- Skeletal Reader Placeholder -->
+      <div id="post-reader-skeleton">
+        <div class="skeleton skeleton-tag"></div>
+        <div class="skeleton skeleton-title-large"></div>
+        <div class="skeleton skeleton-meta-row"></div>
+        <div class="skeleton skeleton-banner-img"></div>
+        <div class="skeleton skeleton-body-paragraph"></div>
+        <div class="skeleton skeleton-body-paragraph"></div>
+      </div>
+
+      <!-- Live Dynamic Post Layout -->
+      <div id="post-reader-content" class="hidden">
+        <span class="reader-post-tag" id="post-category">Category</span>
+        <h1 class="reader-post-title" id="post-title">Article Headline</h1>
+        
+        <!-- Author Profile Header -->
+        <div class="reader-author-header">
+          <img src="" alt="" class="author-header-avatar" id="post-author-avatar">
+          <div class="author-header-meta">
+            <strong class="author-header-name" id="post-author-name">Author Name</strong>
+            <span class="author-header-role" id="post-author-role">Author Position</span>
+          </div>
+          <div class="post-time-meta">
+            <span id="post-date">Publish Date</span>
+            <span class="meta-dot">•</span>
+            <span id="post-readtime">Reading Time</span>
+          </div>
+        </div>
+
+        <!-- Post Hero Banner -->
+        <div class="post-hero-banner-wrapper">
+          <img src="" alt="" class="post-hero-banner-img" id="post-hero-image">
+        </div>
+
+        <!-- Article Editorial Body -->
+        <div class="post-editorial-body" id="post-body-content">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- Reader Footer Features -->
+        <footer class="reader-post-footer">
+          <div class="share-title">Enjoyed the research? Share with your team:</div>
+          <div class="share-actions-row">
+            <button class="btn btn-secondary share-btn-copy" id="share-copy-url">
+              <span class="share-icon">🔗</span> Copy Link
+            </button>
+            <a href="https://www.linkedin.com/sharing/share-offsite/" target="_blank" class="btn btn-secondary share-btn-li" id="share-linkedin">
+              <span class="share-icon">💼</span> Share on LinkedIn
+            </a>
+          </div>
+        </footer>
+
+      </div>
+    </article>
+
+    <!-- Error State -->
+    <div class="blog-empty-state hidden" id="post-error-state">
+      <span class="empty-icon">⚠️</span>
+      <h3>Article not found</h3>
+      <p>We couldn't retrieve the specified article. The link may have changed, or the post was removed from our repository.</p>
+      <a href="./blog.html" class="btn btn-primary">Return to Insights</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4F46E5"/>
+            <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">Katalyst <span class="accent-text">Street</span></span>
+        </div>
+        <p class="footer-tagline">Taming IT Complexity. Building the AI Future.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Navigation</h4>
+          <a href="./index.html">Home</a>
+          <a href="./index.html#services">What We Do</a>
+          <a href="./index.html#solutions">Solutions</a>
+          <a href="./index.html#approach">Our Approach</a>
+        </div>
+        <div class="link-group">
+          <h4>Resources</h4>
+          <a href="./index.html#customers">Customers</a>
+          <a href="./blog.html">Insights</a>
+          <a href="./index.html#contact">Contact</a>
+        </div>
+        <div class="link-group">
+          <h4>Partner Context</h4>
+          <a href="https://console.cloud.google.com/marketplace?hl=en" target="_blank">GCP Marketplace</a>
+          <a href="https://www.linkedin.com/company/96600014/" target="_blank">LinkedIn Profile</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-copy">
+      <p>&copy; 2026 by Katalyst Street, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System -->
+  <div id="toast-notification" class="toast-notification hidden">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message-text">URL copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="./blog-post.js"></script>
+</body>
+</html>

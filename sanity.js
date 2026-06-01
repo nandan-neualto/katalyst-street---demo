@@ -1,0 +1,287 @@
+/*
+ * Sanity CMS Core Integration Service
+ * Configured with blank credentials as requested.
+ * Falls back to high-fidelity mock datasets for a rich out-of-the-box demo.
+ */
+
+export const SANITY_PROJECT_ID = ''; // Leave blank as requested. Populate with your Sanity Project ID to go live.
+export const SANITY_DATASET = 'production'; // Defaults to production
+
+// High-fidelity local mock dataset matching Sanity structure
+export const localBlogDatabase = [
+  {
+    title: 'Taming the "Unknown-Unknowns" in Multi-Period Ingestion Pipelines',
+    slug: 'unknown-unknowns-ingestion-pipelines',
+    publishedAt: '2026-05-15',
+    readTime: '5 Min Read',
+    category: 'Drift Analysis',
+    author: {
+      name: 'Rajesh Koppula',
+      role: 'CEO & Managing Partner',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120'
+    },
+    excerpt: 'Rule-based schema validations are no longer sufficient. Discover how machine-learning drift detection and population stability indexing identify stealth anomalies before they corrupt downstream analytical dashboards...',
+    mainImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=450',
+    body: [
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'Traditional data validation models rely almost exclusively on strict, rigid schema checks. While this catches obvious type violations (e.g., text entering a numeric cell), it fails completely against silent, subtle data degradation—what we call the "unknown-unknowns".'
+          }
+        ]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'For example, if an upstream supplier database changes its pricing currency representation, the numbers might still parse as standard floats. Traditional filters pass the batch. However, your downstream financial predictive models are now corrupted by off-scale numbers.'
+          }
+        ]
+      },
+      {
+        _type: 'heading',
+        level: 2,
+        children: [{ text: 'Enter Population Stability Index (PSI)' }]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'DeltaMax addresses this vulnerability by calculating statistical drift metrics continuously. By measuring the variance between active telemetry runs and historic baselines, it triggers anomaly alerts when distribution frequencies exceed tolerance thresholds.'
+          }
+        ]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'Implementing real-time statistical tests (T-tests, PSI calculations) within the database layer itself ensures anomalies are isolated and routed for analysis before they can contaminate downstream corporate business intelligence.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "A CEO's Blueprint to Overcoming Enterprise IT Complexity",
+    slug: 'ceo-blueprint-overcoming-it-complexity',
+    publishedAt: '2026-04-28',
+    readTime: '6 Min Read',
+    category: 'Executive Advisory',
+    author: {
+      name: 'Rajesh Koppula',
+      role: 'CEO & Managing Partner',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120'
+    },
+    excerpt: 'IT complexity acts as a direct tax on operational agility. We map the critical strategic steps needed to bridge localized database friction with high-level corporate performance metrics...',
+    mainImage: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800&h=450',
+    body: [
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'In modern corporations, IT complexity operates as a hidden, highly destructive tax on growth. Every legacy database silo, custom ETL connection, and unmonitored vendor API increases friction, draining engineering hours and slowing execution speed.'
+          }
+        ]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'When the board demands immediate AI adoption, CEOs often rush to deploy ad-hoc chatbot tools or raw models directly onto disorganized database environments. This only compounds the complexity.'
+          }
+        ]
+      },
+      {
+        _type: 'heading',
+        level: 2,
+        children: [{ text: 'The Actionable Roadmap' }]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'True AI readiness requires architectural simplification. The modern CEO must execute these critical actions:'
+          }
+        ]
+      },
+      {
+        _type: 'list',
+        items: [
+          'Conduct a comprehensive pipeline security and friction audit.',
+          'Establish a centralized data warehouse (e.g., BigQuery, Snowflake) with unified C-suite governance.',
+          'Implement automated quality shields like DeltaMax to guarantee data consistency.'
+        ]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'Only then can AI initiatives deliver predictable, compounding ROI and sustainable scalability.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Integrating Vertex AI and Gemini Models Safely Within Corporate VPCs',
+    slug: 'integrating-vertex-ai-gemini-safely-corporate-vpcs',
+    publishedAt: '2026-03-12',
+    readTime: '8 Min Read',
+    category: 'Cloud Security',
+    author: {
+      name: 'Rajesh Koppula',
+      role: 'CEO & Managing Partner',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120'
+    },
+    excerpt: 'Regulatory compliance is the primary barrier to generative AI adoption. We examine practical deployment patterns that utilize private Google Cloud environments to safely leverage LLMs...',
+    mainImage: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800&h=450',
+    body: [
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'Generative AI holds massive promise for corporate innovation, yet CFOs and legal teams are rightfully concerned about data compliance. Directing corporate knowledge bases through public, unverified SaaS model interfaces violates standard security protocols.'
+          }
+        ]
+      },
+      {
+        _type: 'heading',
+        level: 2,
+        children: [{ text: 'The Solution: Private VPC Deployments' }]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'By utilizing authorized partners like Google Cloud, corporations can isolate advanced foundational LLMs (such as Gemini) within their secure Virtual Private Cloud (VPC) perimeters.'
+          }
+        ]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'This ensures that proprietary datasets used to tune LLMs or feed Retrieval-Augmented Generation (RAG) vector stores remain 100% private. The model operates within your secure governance boundary, eliminating data ingestion risks while unlocking full generative capacities.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'The FinOps Tax: Optimizing BigQuery & Snowflake Storage Costs',
+    slug: 'finops-tax-optimizing-data-storage-costs',
+    publishedAt: '2026-02-18',
+    readTime: '7 Min Read',
+    category: 'Cloud Security',
+    author: {
+      name: 'Andrew Igharo',
+      role: 'Partner, AI Strategy & Execution',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=120&h=120'
+    },
+    excerpt: 'As data pipelines swell, storage and compute expenses compound quietly. Learn the essential FinOps partition rules and partition clusters that immediately lower database overhead...',
+    mainImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=450',
+    body: [
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'Data warehousing on modern cloud infrastructures has enabled unprecedented analytical capabilities. However, without active resource limits and partition clustering, storage costs quickly compound out of proportion, representing what we call the "FinOps Tax".'
+          }
+        ]
+      },
+      {
+        _type: 'heading',
+        level: 2,
+        children: [{ text: 'Optimizing Partitioning and Clustering' }]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'To immediately mitigate database compute overhead, engineering teams must transition tables from flat formats to active partition keys. By segmenting data sets chronologically or by tenant IDs, search queries bypass irrelevant blocks, resulting in an instant 30-50% reduction in query cost structures.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Designing Agentic Workflows for Enterprise ERP Integration',
+    slug: 'designing-agentic-workflows-enterprise-erp',
+    publishedAt: '2026-01-25',
+    readTime: '10 Min Read',
+    category: 'Executive Advisory',
+    author: {
+      name: 'Andrew Igharo',
+      role: 'Partner, AI Strategy & Execution',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=120&h=120'
+    },
+    excerpt: 'Static robotic process automation is giving way to dynamic AI agents. We map out a secure multi-agent architecture capable of navigating high-friction legacy ERP frameworks safely...',
+    mainImage: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800&h=450',
+    body: [
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'Robotic Process Automation (RPA) has historically driven transaction processing efficiency. However, when legacy ERP schemas experience shifts or exceptions, these rigid integrations crash, requiring manual intervention.'
+          }
+        ]
+      },
+      {
+        _type: 'heading',
+        level: 2,
+        children: [{ text: 'The Shift to Agentic AI' }]
+      },
+      {
+        _type: 'block',
+        children: [
+          {
+            text: 'Agentic workflows leverage LLMs to dynamically assess data input shifts, select appropriate functional paths, and self-correct when API validation checkpoints return failures. This layer of autonomous decision-making maintains system uptime even under shifting data schemas.'
+          }
+        ]
+      }
+    ]
+  }
+];
+
+// Lightweight client-side fetch helper
+export async function fetchFromSanity(groqQuery) {
+  if (!SANITY_PROJECT_ID) {
+    console.warn('[SANITY]: Project ID is blank. Falling back to local high-fidelity database.');
+    return simulateGroqQuery(groqQuery);
+  }
+
+  const encodedQuery = encodeURIComponent(groqQuery);
+  const url = `https://${SANITY_PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${SANITY_DATASET}?query=${encodedQuery}`;
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data.result;
+  } catch (error) {
+    console.error('[SANITY API ERROR]:', error, 'Falling back to local database.');
+    return simulateGroqQuery(groqQuery);
+  }
+}
+
+// Simulates GROQ filtering on our mock database
+function simulateGroqQuery(query) {
+  // Simple simulation of standard GROQ queries used in our frontend
+  if (query.includes('*[_type == "post" && slug.current ==') || query.includes('slug.current ==')) {
+    // Extract slug
+    const match = query.match(/slug\.current\s*==\s*["']([^"']+)["']/);
+    const slugValue = match ? match[1] : '';
+    const post = localBlogDatabase.find(p => p.slug === slugValue);
+    return post ? [post] : [];
+  }
+  
+  if (query.includes('order(publishedAt desc)')) {
+    // Return all sorted by date descending
+    return [...localBlogDatabase].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  }
+
+  return localBlogDatabase;
+}
